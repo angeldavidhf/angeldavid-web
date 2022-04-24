@@ -1,27 +1,33 @@
-import { useState } from 'react';
+import React, { useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
-import LoadingSpinner from '@molecules/LoadingSpinner';
+import useScript from '@hooks/useScript';
+
+import DrawerNavigator from '@organisms/DrawerNavigator';
+import HeaderSocialNetworks from '@organisms/HeaderSocialNetworks';
+
+import Home from '@pages/Home';
+import Blog from '@pages/Blog';
 
 function App() {
-  const [count, setCount] = useState(0)
+    useScript('/src/assets/js/browser.min.js');
+    useScript('/src/assets/js/breakpoints.min.js');
+    useScript('/src/assets/js/util.js');
+    useScript('/src/assets/js/main.js');
 
     return (
-        <div className="App">
-            <header className="App-header">
-                <p>Hello Vite + React!</p>
-                <p>
-                    <button type="button" onClick={() => setCount((count) => count + 1)}>
-                    count is: {count}
-                    </button>
-                </p>
-                <p>Edit <code>App.tsx</code> and save to test HMR updates.</p>
-                <p>
-                    <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Learn React</a>
-                    {' | '}
-                    <a className="App-link" href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener noreferrer">Vite Docs</a>
-                </p>
-            </header>
-        </div>
+        <>
+            <div id="main">
+                <div className="inner">
+                    <HeaderSocialNetworks />
+                    <Routes>
+                        <Route path="" element={<Home />} />
+                        <Route path="blog" element={<Blog />} />
+                    </Routes>
+                </div>
+            </div>
+            <DrawerNavigator />
+        </>
     )
 }
 
