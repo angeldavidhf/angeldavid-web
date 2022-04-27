@@ -1,6 +1,6 @@
 import React from "react";
 
-interface ILinkIcon {
+interface IBasicLink {
   url: string;
   classIcon: string;
   textLabel: string;
@@ -9,7 +9,7 @@ interface ILinkIcon {
   };
 }
 
-export default function LinkIcon({ url, classIcon, textLabel, onOpen }: ILinkIcon) {
+export default function BasicLink({ url, classIcon, textLabel, onOpen }: IBasicLink) {
 
   return (
     <a href={url} className={`icon brands ${classIcon}`} {...onOpen}>

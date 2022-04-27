@@ -24,6 +24,12 @@
 			font-size: 1.125em;
 		}
 
+        .logo .svg {
+            width: 5em;
+            bottom: -0.1em;
+            position: absolute;
+        }
+
 		.icons {
 			text-align: right;
 		}
@@ -39,6 +45,12 @@
 				font-size: 1.25em;
 				margin: 0;
 			}
+
+            .logo .svg {
+                width: 3em;
+                bottom: 0.01em;
+                position: absolute;
+            }
 
 			.icons {
 				height: calc(6.25em / 1.25);

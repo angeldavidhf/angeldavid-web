@@ -89,18 +89,20 @@
 					.appendTo($head);
 
 		// Toggle.
-			$('<a href="#sidebar" class="toggle">Toggle</a>')
-				.appendTo($sidebar)
-				.on('click', function(event) {
-
-					// Prevent default.
-						event.preventDefault();
-						event.stopPropagation();
-
-					// Toggle.
-						$sidebar.toggleClass('inactive');
-
-				});
+            if($('#sidebar-toggle').length === 0) {
+                $('<a href="#sidebar" class="toggle" id="sidebar-toggle">Toggle</a>')
+                    .appendTo($sidebar)
+                    .on('click', function(event) {
+    
+                        // Prevent default.
+                            event.preventDefault();
+                            event.stopPropagation();
+    
+                        // Toggle.
+                            $sidebar.toggleClass('inactive');
+    
+                    });
+            }
 
 		// Events.
 
