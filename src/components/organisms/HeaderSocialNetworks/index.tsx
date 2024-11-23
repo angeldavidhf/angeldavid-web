@@ -1,13 +1,12 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-import LinkIcon from '@atoms/LinkIcon';
-import Chameleon1 from '@svgs/chameleon2.svg?component';
+import LinkIcon from '../../atoms/LinkIcon';
+// import Chameleon1 from '../../../assets/svgs/chameleon2.svg?component';
 
 export default function HeaderSocialNetworks() {
   return (
     <header id="header">
-      <Link to="" className="logo"><Chameleon1 className="svg"/></Link>
+      <Link to="" className="logo"></Link>
       <ul className="icons">
         <li><LinkIcon url="https://www.youtube.com/" classIcon="fa-youtube" textLabel="YouTube" onOpen={{ target: "_blank" }}/></li>
         <li><LinkIcon url="https://www.twitch.tv/" classIcon="fa-twitch" textLabel="Twitch" onOpen={{ target: "_blank" }}/></li>

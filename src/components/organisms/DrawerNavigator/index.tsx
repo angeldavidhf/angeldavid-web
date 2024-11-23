@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import InputSearch from "@molecules/InputSearch";
+import InputSearch from "../../molecules/InputSearch";
 
 export default function DrawerNavigator() {
 

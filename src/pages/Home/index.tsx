@@ -1,6 +1,6 @@
 import React from "react";
 
-import pic10 from '@images/pic10.jpg';
+import pic10 from '../../assets/images/pic10.jpg';
 
 export default function Home() {
   return (

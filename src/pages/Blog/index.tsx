@@ -1,6 +1,6 @@
 import React from "react";
 
-import pic11 from '@images/pic11.jpg';
+import pic11 from '../../assets/images/pic11.jpg';
 
 export default function Blog() {
   return (

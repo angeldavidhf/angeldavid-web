@@ -1,6 +1,6 @@
 import React from "react";
 
-import BasicInput from "@atoms/BasicInput";
+import BasicInput from "../../atoms/BasicInput.tsx";
 
 export default function InputSearch() {
   return (
