@@ -1,15 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
+import DrawerNavigator from '@organisms/DrawerNavigator.tsx';
+import HeaderSocialNetworks from '@organisms/HeaderSocialNetworks.tsx';
 
-//import useScript from './hooks/useScript';
-
-import DrawerNavigator from './components/organisms/DrawerNavigator';
-import HeaderSocialNetworks from './components/organisms/HeaderSocialNetworks';
-
-import Home from './pages/Home';
-import Blog from './pages/Blog';
+import Home from '@pages/Home.tsx';
+import Blog from '@pages/Blog.tsx';
 
 function App() {
-    //useScript('/src/assets/js/main.js');
 
     return (
         <>
