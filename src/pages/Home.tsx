@@ -15,8 +15,8 @@ export default function Home() {
                     </ul>
                 </div>
                 <span className="image object">
-          <img src={pic10} alt="pic10" />
-        </span>
+                    <img src={pic10} alt="pic10" />
+                </span>
             </section>
         </>
     );
