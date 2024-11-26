@@ -1,4 +1,5 @@
-import pic10 from '../assets/images/pic10.jpg';
+import me from '@images/pic10.jpg';
+import {Link} from "react-router-dom";
 
 export default function Home() {
     return (
@@ -7,15 +8,16 @@ export default function Home() {
                 <div className="content">
                     <header>
                         <h1>Hi, I’m Ángel</h1>
-                        <p>Senior Front-end developer</p>
+                        <p>Software Developer</p>
                     </header>
-                    <p>I'm a software engineer in Colombia. I love building open-source projects and writing about what I learn. </p>
+                    <p>A passionate Software Developer with over 5 years of experience creating innovative solutions. With a strong focus on backend development, I specialize in technologies like Python, Node.js, TypeScript, GraphQL, and a variety of databases.</p>
+                    <p>I see software development as an art form that allows me to turn ideas into reality. My ultimate goal is to master AI and Machine Learning while inspiring and teaching the next generation of developers.</p>
                     <ul className="actions">
-                        <li><a href="#" className="button big">Learn More</a></li>
+                        <li> <Link to="about" className="button big">Learn More</Link></li>
                     </ul>
                 </div>
                 <span className="image object">
-                    <img src={pic10} alt="pic10" />
+                    <img src={me} alt="Me" />
                 </span>
             </section>
         </>

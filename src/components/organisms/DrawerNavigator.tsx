@@ -6,6 +6,7 @@ import useSidebar from "@hooks/useSidebar";
 import useObjectFitPolyfill from "@hooks/useObjectFitPolyfill";
 
 import InputSearch from "@molecules/InputSearch.tsx";
+import GetInTouch from "@molecules/GetInTouch.tsx";
 
 
 const breakpointsConfig = {
@@ -41,10 +42,13 @@ export default function DrawerNavigator() {
                             <h2>Menu</h2>
                         </header>
                         <ul>
-                            <li><Link to="">Inicio</Link></li>
+                            <li><Link to="">Home</Link></li>
+                            <li><Link to="about">About</Link></li>
+                            <li><Link to="portfolio">Portfolio</Link></li>
                             <li><Link to="blog">Blog</Link></li>
                         </ul>
                     </nav>
+                    <GetInTouch />
                 </div>
             </div>
         </>
