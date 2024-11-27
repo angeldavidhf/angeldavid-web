@@ -1,28 +1,23 @@
 import { Route, Routes } from 'react-router-dom';
 
-import DrawerNavigator from '@organisms/DrawerNavigator.tsx';
-import HeaderSocialNetworks from '@organisms/HeaderSocialNetworks.tsx';
-
-import Home from '@pages/Home.tsx';
-import Blog from '@pages/Blog.tsx';
+import Home from '@pages/Home';
+import Blog from '@pages/Blog';
 
 function App() {
     return (
         <>
-            <div id="wrapper">
-                <div id="main">
-                    <div className="inner">
-                        <HeaderSocialNetworks />
+            <main className="main">
+                <div className="container gutter-top gutter-bottom">
+                    <div className="row sticky-parent">
                         <Routes>
-                            <Route path="" element={<Home />} />
-                            <Route path="blog" element={<Blog />} />
+                            <Route path="" element={<Home/>}/>
+                            <Route path="blog" element={<Blog/>}/>
                         </Routes>
                     </div>
                 </div>
-                <DrawerNavigator />
-            </div>
+            </main>
         </>
-      );
+    );
 }
 
 export default App
