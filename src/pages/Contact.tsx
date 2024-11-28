@@ -1,5 +1,4 @@
-
-export default function Blog() {
+export default function Contact() {
     return (
         <>
         </>

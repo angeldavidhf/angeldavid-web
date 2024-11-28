@@ -1,4 +1,4 @@
-import BasicInput from "@atoms/BasicInput.tsx";
+import BasicInput from "@atoms/BasicInput";
 
 export default function InputSearch() {
     return (
